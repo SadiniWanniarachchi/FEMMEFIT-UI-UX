@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
-
 import {
   MdOutlineShoppingCart,
   MdOutlineNotifications,
   MdSearch,
   MdArrowForward,
 } from 'react-icons/md';
+
+
 
 const NavbarMenu = [
   { id: 1, title: 'Home', link: '/' },
@@ -17,19 +18,21 @@ const NavbarMenu = [
 
 const Navbar = () => {
 
-
   return (
 
     <div className="bg-[#EEE9D3] min-h-screen">
-      {/* Navbar Section */}
+{/* Navbar Section */}
       <nav>
         <div className="container flex justify-between items-center py-4 md:pt-4">
-          {/* Logo */}
+
+
+{/* Logo */}
           <div className="flex">
             <p className="font-bold text-3xl text-secondary">FEMMEFIT</p>
           </div>
 
-          {/* Navbar Menu */}
+
+{/* Navbar Menu */}
           <div className="hidden md:block">
             <ul className="flex items-center gap-6 text-secondary">
               {NavbarMenu.map((menu) => (
@@ -45,8 +48,9 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Icons */}
-          <div className="flex gap-6">
+
+{/* Icons */}
+      <div className="flex gap-6">
             <button className="text-xl hover:text-primary rounded-full p-2">
               <MdSearch />
             </button>
@@ -60,9 +64,12 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Main Section */}
-      <div className="container mx-auto grid grid-cols-5 gap-2 mt-2">
-        {/* Left Section */}
+
+{/* Main Section */}
+    <div className="container mx-auto grid grid-cols-5 gap-2 mt-2">
+
+
+{/* Left Section */}
         <div className="col-span-3 relative">
           <img
             src="/images/r10.jpg"
@@ -74,13 +81,14 @@ const Navbar = () => {
             New
           </button>
 
-          {/* Buttons Section */}
-<div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-4 flex-nowrap justify-center">
+
+
+{/* Buttons Section */}
+ <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-14 flex-nowrap justify-center">
+
   <motion.button
-    className="flex items-center gap-2 bg-[#1E1916] text-white px-6 sm:px-8 md:px-12 py-2 rounded-full justify-center transition-all duration-300 whitespace-nowrap font-bold text-sm sm:text-base md:text-lg"
-    
-    
-    
+    className="flex items-center gap-1 bg-[#1E1916] text-white px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md transition-all duration-300 whitespace-nowrap justify-between text-sm sm:text-base"
+        
     whileHover={{
       scale: 1.05,
     }}
@@ -88,14 +96,15 @@ const Navbar = () => {
   >
     VIEW CATALOGUE
     <span
-      className="flex-grow text-left bg-white text-[#1E1916] w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full shadow-md ml-4"
+      className="flex-grow text-left bg-white text-[#1E1916] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
     >
       <MdArrowForward size={18} />
     </span>
   </motion.button>
 
+
   <motion.button
-    className="flex items-center gap-2 bg-[#F5F2E7] text-[#1E1916] px-6 sm:px-8 md:px-12 py-2 rounded-full justify-center border-2 transition-all duration-300 whitespace-nowrap font-bold text-sm sm:text-base md:text-lg"
+    className="flex items-center gap-2 bg-[white] text-[#1E1916] px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md transition-all duration-300 font-bold text-sm sm:text-base justify-between whitespace-nowrap"
     whileHover={{
       scale: 1.05,
     }}
@@ -103,18 +112,19 @@ const Navbar = () => {
   >
     LEARN MORE
     <span 
-      className="flex-grow text-left bg-[#1E1916] text-[#F5F2E7] w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full shadow-md"
+      className="bg-[#1E1916] text-[white] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
     >
       <MdArrowForward size={18} />
     </span>
   </motion.button>
 
-
           </div>
         </div>
 
-        {/* Right Section */}
-        <div className="col-span-2 flex flex-col gap-2">
+
+
+{/* Right Section */}
+      <div className="col-span-2 flex flex-col gap-2">
           <div className="bg-[#1E1916] text-white p-2 rounded-lg h-[210px]">
             <h1 className="text-3xl font-bold text-white">
               STYLE TRENDS ARE INFLUENCED BY THE CULTURES.
@@ -150,8 +160,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Quote Section */}
-      <div className="bg-[#EEE9D3] flex items-start justify-center pt-16 pb-18">
+
+
+{/* Quote Section */}
+    <div className="bg-[#EEE9D3] flex items-start justify-center pt-16 pb-18">
         <h1 className="text-[#1e1916] text-3xl md:text-4xl lg:text-4xl font-bold leading-snug tracking-wider text-left">
           “<span className="text-5xl font-bold">A</span> woman who was desired{' '}
           <span className="inline-block">
@@ -172,20 +184,24 @@ const Navbar = () => {
         </h1>
       </div>
 
-      {/* Additional Sections */}
-      <div className="bg-[#EEE9D3] min-h-[400px] md:min-h-[300px] py-8 md:py-12">
-        <div className="container mx-auto grid grid-cols-4 gap-4 pt-8">
+
+{/* Additional Sections */}
+    <div className="bg-[#EEE9D3] min-h-[400px] md:min-h-[300px] py-8 md:py-12">
+    <div className="container mx-auto grid grid-cols-4 gap-4 pt-8">
           
+
 {/* Left Section with Quote, Learn More Button, and Image */}
-<div className="col-span-4 md:col-span-2 bg-[#DE6536] text-white rounded-lg pt-2 pb-2 px-3 flex flex-col md:flex-row items-center md:items-start justify-between gap-4">
-  {/* Text Section */}
+ <div className="col-span-4 md:col-span-2 bg-[#DE6536] text-white rounded-lg pt-2 pb-2 px-3 flex flex-col md:flex-row items-center md:items-start justify-between gap-4">
+  
+
+{/* Text Section */}
   <div className="flex flex-col justify-center w-full md:w-1/2 pr-4">
     <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 md:mb-24">
       Style trends are influenced by the cultures.
     </h1>
 
     <motion.button
-      className="flex items-center gap-4 bg-[#F5F2E7] text-[#1E1916] px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-md border-2 transition-all duration-300 font-bold text-sm sm:text-base justify-between"
+      className="flex items-center gap-2 bg-[#F5F2E7] text-[#1E1916] px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md border-2 transition-all duration-300 font-bold text-sm sm:text-base justify-between"
       whileHover={{
         scale: 1.05,
       }}
@@ -193,14 +209,16 @@ const Navbar = () => {
     >
       <span className="flex-grow text-left">LEARN MORE</span>
       <span
-        className="bg-[#1E1916] text-[#F5F2E7] w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full shadow-md ml-2"
+        className="bg-[#1E1916] text-[#F5F2E7] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
       >
         <MdArrowForward size={18} />
       </span>
     </motion.button>
   </div>
 
-  {/* Image Section */}
+
+
+{/* Image Section */}
   <div className="w-full md:w-auto flex justify-center">
     <img
       src="/images/r4.jpg"
@@ -212,35 +230,41 @@ const Navbar = () => {
 
 
 
-          {/* Right Section with Image */}
-<div className="col-span-4 md:col-span-2 grid grid-cols-2 gap-3">
-  {/* Left Subsection */}
+{/* Right Section with Image */}
+ <div className="col-span-4 md:col-span-2 grid grid-cols-2 gap-3">
+
+
+{/* Left Subsection */}
   <div className="flex items-center justify-center relative w-full h-[300px]">
-  {/* Image */}
+
+
+{/* Image */}
   <img
     src="/images/r5.jpg"
     alt="Cultural Influence"
     className="rounded-lg w-full h-full object-cover"
   />
 
-  {/* + Button */}
+
+{/* + Button */}
   <button className="absolute top-2 right-2 bg-white text-black rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold shadow-lg">
     +
   </button>
 </div>
 
   
+{/* Right Subsection */}
+  <div className="flex items-center justify-center relative w-full h-[300px]">
 
-  {/* Right Subsection */}
-<div className="flex items-center justify-center relative w-full h-[300px]">
-  {/* Image */}
+
+{/* Image */}
   <img
     src="/images/r1.jpg"
     alt="Cultural Influence"
     className="rounded-lg w-full h-full object-cover"
   />
 
-  {/* + Button */}
+{/* + Button */}
   <button className="absolute top-2 right-2 bg-white text-black rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold shadow-lg">
     +
   </button>
@@ -252,18 +276,17 @@ const Navbar = () => {
 
 
 
-
 {/* Quote Section */}
+
 <div className="bg-[#EEE9D3] flex items-start justify-end pr-44 pt-8 pb-20">
         <h1 className="text-[#1e1916] text-3xl md:text-4xl lg:text-4xl font-bold leading-snug tracking-wider text-left">
         When they write that <br/>
-the name of a historical  <br/>
-hero they mean woman.
+        the name of a historical  <br/>
+        hero they mean woman.
         </h1>
       </div>
 
 
-      
 
 {/* Bottom Image Section */}
       <div className="container mx-auto grid grid-cols-3 gap-3 pb-12">
@@ -276,6 +299,7 @@ hero they mean woman.
           <p className="font-semibold mt-2">FEMMEFIT2023</p>
           <p className="text-sm text-[#1E1916]">Women’s clothing</p>
         </div>
+
         <div className="text-left">
           <img
             src="/images/r5.jpg"
@@ -285,6 +309,7 @@ hero they mean woman.
           <p className="font-semibold mt-2">COLLECTION</p>
           <p className="text-sm text-[#1E1916]">Women’s clothing</p>
         </div>
+
         <div className="text-left">
           <img
             src="/images/r3.jpg"
@@ -296,18 +321,19 @@ hero they mean woman.
         </div>
         
       </div>
+
  
- {/* Horizontal line Section */}
+{/* Horizontal line Section */}
 
-      <div>
-      
+    <div>
       <hr className="h-1 bg-[#DE6536] border-0 mx-44" />
-      
     </div>
       
 
     </div>
+
   );
+
 };
 
 export default Navbar;
