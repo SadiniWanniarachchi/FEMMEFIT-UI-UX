@@ -38,9 +38,9 @@ const CultureSection = () => {
           {/* Image */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
             <img
-              src="/images/r2.jpg"
+              src="/images/r5.jpg"
               alt="Two women smiling"
-              className="w-64 h-[360px] object-cover rounded-lg"
+              className="w-80 h-[360px] object-cover rounded-lg"
             />
           </div>
         </div>

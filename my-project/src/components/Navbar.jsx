@@ -240,7 +240,7 @@ const Navbar = () => {
 
 {/* Image */}
   <img
-    src="/images/r5.jpg"
+    src="/images/r9.jpg"
     alt="Cultural Influence"
     className="rounded-lg w-full h-full object-cover"
   />
@@ -259,7 +259,7 @@ const Navbar = () => {
 
 {/* Image */}
   <img
-    src="/images/r1.jpg"
+    src="/images/r6.jpg"
     alt="Cultural Influence"
     className="rounded-lg w-full h-full object-cover"
   />
@@ -288,41 +288,53 @@ const Navbar = () => {
 
 
 
+
 {/* Bottom Image Section */}
-      <div className="container mx-auto grid grid-cols-3 gap-3 pb-12">
-        <div className="text-left">
-          <img
-            src="/images/r7.jpg"
-            alt="Femmefit 2023"
-            className="rounded-lg w-full h-[200px] object-cover"
-          />
-          <p className="font-semibold mt-2">FEMMEFIT2023</p>
-          <p className="text-sm text-[#1E1916]">Women’s clothing</p>
-        </div>
+<div className="container mx-auto grid grid-cols-3 gap-3 pb-12">
+  <motion.div
+    className="text-left"
+    whileHover={{ scale: 1.05 }}             // Scale up on hover
+    transition={{ duration: 0.3 }}           // Transition duration for the scale effect
+  >
+    <img
+      src="/images/r7.jpg"
+      alt="Femmefit 2023"
+      className="rounded-lg w-full h-[200px] object-cover"
+    />
+    <p className="font-semibold mt-2">FEMMEFIT2023</p>
+    <p className="text-sm text-[#1E1916]">Women’s clothing</p>
+  </motion.div>
 
-        <div className="text-left">
-          <img
-            src="/images/r5.jpg"
-            alt="Collection"
-            className="rounded-lg w-full h-[200px] object-cover"
-          />
-          <p className="font-semibold mt-2">COLLECTION</p>
-          <p className="text-sm text-[#1E1916]">Women’s clothing</p>
-        </div>
+  <motion.div
+    className="text-left"
+    whileHover={{ scale: 1.05 }}             // Scale up on hover
+    transition={{ duration: 0.3 }}           // Transition duration for the scale effect
+  >
+    <img
+      src="/images/r8.jpg"
+      alt="Collection"
+      className="rounded-lg w-full h-[200px] object-cover"
+    />
+    <p className="font-semibold mt-2">COLLECTION</p>
+    <p className="text-sm text-[#1E1916]">Women’s clothing</p>
+  </motion.div>
 
-        <div className="text-left">
-          <img
-            src="/images/r3.jpg"
-            alt="Jackets"
-            className="rounded-lg w-full h-[200px] object-cover"
-          />
-          <p className="font-semibold mt-2">JACKETS</p>
-          <p className="text-sm text-[#1E1916]">Women’s clothing</p>
-        </div>
-        
-      </div>
+  <motion.div
+    className="text-left"
+    whileHover={{ scale: 1.05 }}             // Scale up on hover
+    transition={{ duration: 0.3 }}           // Transition duration for the scale effect
+  >
+    <img
+      src="/images/r12.jpg"
+      alt="Jackets"
+      className="rounded-lg w-full h-[200px] object-cover"
+    />
+    <p className="font-semibold mt-2">JACKETS</p>
+    <p className="text-sm text-[#1E1916]">Women’s clothing</p>
+  </motion.div>
+</div>
 
- 
+
 {/* Horizontal line Section */}
 
     <div>

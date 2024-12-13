@@ -24,7 +24,7 @@ const Collection2023 = () => {
 
  
  return (
-    <div className="bg-[#EEE9D3] min-h-screen flex flex-col items-start pt-32 pb-12 px-4 md:px-1">
+    <div className="bg-[#EEE9D3] min-h-screen flex flex-col items-start pt-24 pb-12 px-4 md:px-1">
 
 {/* Header Section */}
       <div className="mb-8 pl-44">
@@ -34,26 +34,24 @@ const Collection2023 = () => {
 
 
 {/* Collection Cards */}
-       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
+<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
+  {collections.map((item) => (
+    <div
+      key={item.id}
+      className="bg-[#1E1916] text-white p-6 w-full h-[230px] max-w-sm rounded-2xl flex flex-col justify-between relative shadow-lg mx-auto transition-all duration-300 transform hover:bg-white hover:text-[#1E1916] hover:translate-y-[-10px]"
+    >
+      <p className="text-sm mb-2">Arrivals</p>
+      <h2 className="text-lg font-semibold mt-auto">{item.title}</h2>
+      <p className="text-xs">{item.description}</p>
 
-        {collections.map((item) => (
-          <div
-            key={item.id}
-            className="bg-[#1E1916] text-white p-6 w-full h-[230px] max-w-sm rounded-2xl flex flex-col justify-between relative shadow-lg mx-auto"
-          >
-            <p className="text-sm mb-2">Arrivals</p>
-            <h2 className="text-lg font-semibold mt-auto">{item.title}</h2>
-            <p className="text-xs text-white">{item.description}</p>
+      {/* Icon Button */}
+      <button
+        className="absolute top-4 right-4 bg-white text-[#1E1916] w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:scale-110 hover:shadow-lg"
+      >
+        <MdArrowForward size={20} />
+      </button>
+    </div>
 
-
-{/* Icon Button */}   
-        <button
-              className="absolute top-4 right-4 bg-white text-[#1E1916] w-10 h-10 flex items-center justify-center rounded-full shadow-md"
-            >
-              <MdArrowForward size={20} />
-
-              </button>
-          </div>
         ))}
 
       </div>
