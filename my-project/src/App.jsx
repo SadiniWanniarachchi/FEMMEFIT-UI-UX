@@ -9,8 +9,8 @@ const App = () => {
     <div>
 
       <Navbar />
-      <Collection />
       <CultureSection/>
+      <Collection/>
 
     </div>
 

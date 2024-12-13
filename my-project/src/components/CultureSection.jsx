@@ -1,50 +1,52 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { MdArrowForward } from 'react-icons/md';
 
 const CultureSection = () => {
-  return ( 
+  return (
+    <div className="bg-[#EEE9D3] py-20">
+      <div className="container mx-auto">
+        <div className="bg-[#DE6536] p-8 md:p-7 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
 
-    <div className="bg-[#EEE9D3] flex flex-col md:flex-row items-center justify-between p-8 md:p-12 rounded-lg shadow-lg">
+          {/* Text Content */}
+          <div className="w-full md:w-1/2 space-y-10">
+          <p className="text-base text-white">Arrivals</p>
+            <h2 className="text-lg md:text-4xl font-bold text-white">
+              Style trends are influenced <br />
+              by the cultures.
+            </h2>
+            <p className="text-sm md:text-base text-white opacity-80">
+              When they are in the means of fashion or how they are portrayed, cultures constantly leave us in the trendy corner. What they seek and the variety of fashions have their own aesthetics that define us as individuals or a unity that makes us move.
+            </p>
 
-      
- {/* Left Section */}
+            <motion.button
+              className="flex items-center gap-16 bg-white text-[#1E1916] px-2 py-2 rounded-full shadow-md border-2 transition-all duration-300 font-bold text-sm justify-between"
+              whileHover={{
+                scale: 1.05,
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className="flex-grow text-left">LEARN MORE</span>
+              <span
+                className="bg-[#1E1916] text-white w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
+              >
+                <MdArrowForward size={20} />
+              </span>
+            </motion.button>
+          </div>
 
-      <div className="bg-[#DE6536] p-6 md:p-8 rounded-lg w-full md:w-1/2">
-      
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-          Style trends are influenced by the cultures.
-        </h2>
-
-        <p className="text-sm md:text-base text-white opacity-90 mb-6">
-          When they are in the means of fashion or how they are portrayed, 
-          cultures constantly leave us in the trendy corner. What they seek 
-          and the variety of fashions have their own aesthetics that define 
-          us as individuals or a unity that makes us move.
-        </p>
-
-        <button className="flex items-center gap-3 bg-white text-[#1E1916] px-4 py-2 rounded-full shadow-md border-2 transition-all duration-300 font-bold text-sm">
-          LEARN MORE
-          <span className="bg-[#1E1916] text-white w-8 h-8 flex items-center justify-center rounded-full">
-            →
-          </span>
-        </button>
-
+          {/* Image */}
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
+            <img
+              src="/images/r2.jpg"
+              alt="Two women smiling"
+              className="w-64 h-[360px] object-cover rounded-lg"
+            />
+          </div>
+        </div>
       </div>
-
-
- {/* Right Section */}
-      <div className="w-full md:w-1/2 mt-6 md:mt-0">
-        <img
-          src="/images/r2.jpg" 
-          alt="Two women smiling"
-          className="rounded-lg shadow-lg"
-        />
-      </div>
-
     </div>
-
   );
-
-
 };
 
 export default CultureSection;

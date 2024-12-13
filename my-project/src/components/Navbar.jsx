@@ -87,7 +87,7 @@ const Navbar = () => {
  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-14 flex-nowrap justify-center">
 
   <motion.button
-    className="flex items-center gap-1 bg-[#1E1916] text-white px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md transition-all duration-300 whitespace-nowrap justify-between text-sm sm:text-base"
+    className="flex items-center gap-7 bg-[#1E1916] text-white px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md transition-all duration-300 whitespace-nowrap justify-between text-sm sm:text-base"
         
     whileHover={{
       scale: 1.05,
@@ -98,13 +98,13 @@ const Navbar = () => {
     <span
       className="flex-grow text-left bg-white text-[#1E1916] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
     >
-      <MdArrowForward size={18} />
+      <MdArrowForward size={20} />
     </span>
   </motion.button>
 
 
   <motion.button
-    className="flex items-center gap-2 bg-[white] text-[#1E1916] px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md transition-all duration-300 font-bold text-sm sm:text-base justify-between whitespace-nowrap"
+    className="flex items-center gap-10 bg-[white] text-[#1E1916] px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md transition-all duration-300 font-bold text-sm sm:text-base justify-between whitespace-nowrap"
     whileHover={{
       scale: 1.05,
     }}
@@ -114,7 +114,7 @@ const Navbar = () => {
     <span 
       className="bg-[#1E1916] text-[white] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
     >
-      <MdArrowForward size={18} />
+      <MdArrowForward size={20} />
     </span>
   </motion.button>
 
@@ -201,7 +201,7 @@ const Navbar = () => {
     </h1>
 
     <motion.button
-      className="flex items-center gap-2 bg-[#F5F2E7] text-[#1E1916] px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md border-2 transition-all duration-300 font-bold text-sm sm:text-base justify-between"
+      className="flex items-center bg-white text-[#1E1916] px-3 sm:px-2 py-2 sm:py-2 rounded-full shadow-md transition-all duration-300 font-bold text-sm sm:text-base justify-between"
       whileHover={{
         scale: 1.05,
       }}
@@ -209,9 +209,9 @@ const Navbar = () => {
     >
       <span className="flex-grow text-left">LEARN MORE</span>
       <span
-        className="bg-[#1E1916] text-[#F5F2E7] w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
+        className="bg-[#1E1916] text-white w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full shadow-md ml-2"
       >
-        <MdArrowForward size={18} />
+        <MdArrowForward size={20} />
       </span>
     </motion.button>
   </div>

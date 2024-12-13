@@ -43,12 +43,12 @@ const Collection2023 = () => {
           >
             <p className="text-sm mb-2">Arrivals</p>
             <h2 className="text-lg font-semibold mt-auto">{item.title}</h2>
-            <p className="text-xs text-[#BFBFBF]">{item.description}</p>
+            <p className="text-xs text-white">{item.description}</p>
 
 
 {/* Icon Button */}   
         <button
-              className="absolute top-4 right-4 bg-[#F5F2E7] text-[#1E1916] w-8 h-8 flex items-center justify-center rounded-full shadow-md"
+              className="absolute top-4 right-4 bg-white text-[#1E1916] w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
               <MdArrowForward size={20} />
 
