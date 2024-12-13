@@ -8,7 +8,7 @@ const CultureSection = () => {
       <div className="container mx-auto">
         <div className="bg-[#DE6536] p-8 md:p-7 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
 
-          {/* Text Content */}
+  {/* Text Content */}
           <div className="w-full md:w-1/2 space-y-10">
           <p className="text-base text-white">Arrivals</p>
             <h2 className="text-lg md:text-4xl font-bold text-white">
@@ -35,7 +35,7 @@ const CultureSection = () => {
             </motion.button>
           </div>
 
-          {/* Image */}
+  {/* Image */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
             <img
               src="/images/r5.jpg"

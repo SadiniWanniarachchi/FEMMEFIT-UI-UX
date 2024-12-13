@@ -38,7 +38,7 @@ const Collection2023 = () => {
   {collections.map((item) => (
     <div
       key={item.id}
-      className="bg-[#1E1916] text-white p-6 w-full h-[230px] max-w-sm rounded-2xl flex flex-col justify-between relative shadow-lg mx-auto transition-all duration-300 transform hover:bg-white hover:text-[#1E1916] hover:translate-y-[-10px]"
+      className="group bg-[#1E1916] text-white p-6 w-full h-[230px] max-w-sm rounded-2xl flex flex-col justify-between relative shadow-lg mx-auto transition-all duration-300 transform hover:bg-white hover:text-[#1E1916] hover:translate-y-[-10px]"
     >
       <p className="text-sm mb-2">Arrivals</p>
       <h2 className="text-lg font-semibold mt-auto">{item.title}</h2>
@@ -46,11 +46,12 @@ const Collection2023 = () => {
 
       {/* Icon Button */}
       <button
-        className="absolute top-4 right-4 bg-white text-[#1E1916] w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:scale-110 hover:shadow-lg"
+        className="absolute top-4 right-4 bg-white text-[#1E1916] w-10 h-10 flex items-center justify-center rounded-full shadow-md transition-all duration-300 group-hover:bg-[#1E1916] group-hover:text-white group-hover:scale-110 group-hover:shadow-lg"
       >
         <MdArrowForward size={20} />
       </button>
     </div>
+
 
         ))}
 

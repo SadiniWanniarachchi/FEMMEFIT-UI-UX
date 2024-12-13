@@ -277,15 +277,31 @@ const Navbar = () => {
 
 
 {/* Quote Section */}
-
 <div className="bg-[#EEE9D3] flex items-start justify-end pr-44 pt-8 pb-20">
-        <h1 className="text-[#1e1916] text-3xl md:text-4xl lg:text-4xl font-bold leading-snug tracking-wider text-left">
-        When they write that <br/>
-        the name of a historical  <br/>
-        hero they mean woman.
-        </h1>
-      </div>
-
+  <h1 className="text-[#1e1916] text-3xl md:text-4xl lg:text-4xl font-bold leading-snug tracking-wider text-right">
+    {["When they write that", "the name of a historical hero", "they mean woman."].map((line, lineIndex) => (
+      <span key={lineIndex} className="block">
+        {Array.from(line).map((letter, index) => (
+          <motion.span
+            key={index}
+            className="inline-block"
+            whileHover={{
+              y: -5, // Move upward
+              color: "#de6536", // Change color to orange
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            {letter === " " ? "\u00A0" : letter}
+          </motion.span>
+        ))}
+      </span>
+    ))}
+  </h1>
+</div>
 
 
 
